@@ -17,3 +17,16 @@
 `tar -jcvf archive_name.tar.z2 folder_to_compress`
 
 `tar -jxvf archive_name.tar.z2`
+
+## GZ
+`gunzip archivename.gz`
+
+
+## DMG
+(create) `hdiutil create -format UDZO -srcfolder folder_to_compress archive_name.dmg`
+
+(mount)  `hdiutil attach archive_name.dmg`
+
+(view)   `ls -lah /Volumes/archive_name/`
+
+(eject)  `hdiutil eject /Volumes/archive_name/`
